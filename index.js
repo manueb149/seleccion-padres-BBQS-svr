@@ -1,6 +1,7 @@
 // Import libraries
 const express = require('express');
 const cors = require('cors');
+
 // Import DB connection
 const DBconnect = require('./config/db');
 DBconnect();

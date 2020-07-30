@@ -1,8 +1,7 @@
 const mongoose = require('mongoose');
 
 const VotesSchema = mongoose.Schema({
-    candidates: {},
-    commissar: {}
+    family: {},
 });
 
 module.exports = mongoose.model('Votes', VotesSchema);

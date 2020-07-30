@@ -10,4 +10,16 @@ router.post('/',
   votesController.setVote
 );
 
+router.post('/batchFamilies',
+  votesController.batchFamily
+);
+
+router.get('/getFamilies',
+  votesController.getFamilies
+)
+
+router.delete('/delete/:id',
+  votesController.deleteFamily
+)
+
 module.exports = router;
