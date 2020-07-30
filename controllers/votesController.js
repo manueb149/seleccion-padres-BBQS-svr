@@ -51,7 +51,7 @@ exports.deleteFamily = async (req, res) => {
         if (!req.params.id) return;
         const family = await Vote.findById(req.params.id);
         if (!family) {
-            res.send('Familia no existe');
+            res.status(500).send('Familia no existe');
             return;
         }
         await Vote.findOneAndRemove({ _id: req.params.id })
