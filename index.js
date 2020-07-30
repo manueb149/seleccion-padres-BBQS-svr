@@ -8,7 +8,7 @@ DBconnect();
 
 //Start Express App
 const App = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 // Enable CORS
 App.use(cors());
